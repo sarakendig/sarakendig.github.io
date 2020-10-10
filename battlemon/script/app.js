@@ -15,6 +15,9 @@ const Game = {
             case "Eevee":
                 player = new Pokemon(playerName, 60, 'bite', 20);
                 break;
+            case "Charmander":
+                player = new Pokemon(playerName, 70, 'fire fang', 20);
+                break;
         }
     }
 }
