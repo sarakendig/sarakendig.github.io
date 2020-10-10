@@ -71,4 +71,5 @@ $(() => {
 
 //citing
 
-///css-tricks.com for how to make a div clickable
+///css-tricks.com for how to make a div clickable and flexbox use
+//flex-box froggy flexbox help

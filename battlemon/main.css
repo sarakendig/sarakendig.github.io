@@ -23,11 +23,18 @@ color: black;
 
 .start {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
     background-image: 'battlemon/imgs/BG1.jpg';
 
 }
 
+.start img {
+display: block;
+margin:auto;
+width: 100px;
+height: 100px;
+}
 .arena {
 
 }
