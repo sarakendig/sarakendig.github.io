@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 150px;
+}
+
+p {
+
+}
+
+h2 {
+
+}
+
+
+.header {
+background-color: white;
+color: black;
+}
+
+.start {
+    background-image: 'battlemon/imgs/BG1.jpg';
+
+}
+
+.arena {
+
+}
+
+.enemy {
+
+}
