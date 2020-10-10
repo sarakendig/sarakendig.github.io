@@ -7,8 +7,8 @@ const Game = {
 reset(playerName) {
     switch (playerName) {
         case "Pikachu":
-            player = new Pokemon(playerName, )
-
+            player = new Pokemon(playerName, 70, 'pika ball', 30);
+            break;
 
             }
         }
@@ -29,21 +29,5 @@ class Pokemon {
     }
 }
 
-class Player extends Pokemon {
-    constructor(name, hp, move, damage) {
-        this.name = name;
-        this.hp = hp;
-        this.move = move;
-        this.damage = damage;
-    }
-    player
-}
-
-class Enemy extends Pokemon {
-    constructor(name, hp, move, damage) {
-        this.name = name;
-        this.hp = hp;
-        this.move = move;
-        this.damage = damage;
-    }
-}
+let player;
+let enemy;
