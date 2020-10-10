@@ -12,6 +12,9 @@ const Game = {
             case "Bulbasaur":
                 player = new Pokemon(playerName, 70, 'vine whip', 50);
                 break;
+            case "Eevee":
+                player = new Pokemon(playerName, 60, 'bite', 20);
+                break;
         }
     }
 }
