@@ -1,18 +1,20 @@
 const Game = {
-    start(playerName) { 
+    start(playerName) {
         this.reset(playerName);
         this.setupArena();
-},
+    },
 
-reset(playerName) {
-    switch (playerName) {
-        case "Pikachu":
-            player = new Pokemon(playerName, 70, 'pika ball', 30);
-            break;
-
-            }
+    reset(playerName) {
+        switch (playerName) {
+            case "Pikachu":
+                player = new Pokemon(playerName, 70, 'pika ball', 30);
+                break;
+            case "Bulbasaur":
+                player = new Pokemon(playerName, 70, 'vine whip', 50);
+                break;
         }
     }
+}
 
 
 class Pokemon {
@@ -24,7 +26,7 @@ class Pokemon {
     }
 
     attack(enemy) {
-        enemy.hp-= this.move
+        enemy.hp -= this.move
         enemy.announceHealth()
     }
 }
