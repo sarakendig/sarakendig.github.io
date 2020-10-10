@@ -22,6 +22,8 @@ color: black;
 }
 
 .start {
+    display: flex;
+    flex-flow: column nowrap;
     background-image: 'battlemon/imgs/BG1.jpg';
 
 }
@@ -32,4 +34,32 @@ color: black;
 
 .enemy {
 
+}
+
+.pikachu {
+ width: 200px;
+ height: 350px;
+ background-color: yellow;
+ border-radius: 20px;
+}
+
+.bulbasaur {
+    width: 200px;
+    height: 350px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.eevee {
+    width: 200px;
+    height: 350px;
+    background-color: brown;
+    border-radius: 20px;
+}
+
+.charmander {
+    width: 200px;
+    height: 350px;
+    background-color: orangered;
+    border-radius: 20px;
 }

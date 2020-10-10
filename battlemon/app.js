@@ -24,9 +24,7 @@ const Game = {
                 // console.log("Charmander is made")
                 break;
         }
-
     }
-
 }
 
 // Pokemon class
