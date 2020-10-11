@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="app.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
 </head>
 
 <body>
@@ -17,20 +21,25 @@
     </div>
 
     <div class="start">
-        <a href="#">
+        <a href="#" onclick="Game.start('Pikachu')">
 
             <div class="pikachu">
-                <div class="cardimgp">
+                <div class="cardimgpikachu">
                     <img src="imgs/player/pikachu.png" alt="pikachu">
                 </div>
-                <div class="cardbodyp">
-                    
+                <div class="cardbodypikachu">
+                    <div class="cardtextpikachu">
+                        <h3>Pikachu</h3>
+                        <p>HP: 70</p>
+                        <p>Move: Pika Ball</p>
+                        <p>Damage: 30</p>
+                    </div>
                 </div>
             </div>
 
         </a>
 
-        <a href="#">
+        <a href="#" onclick="Game.start('Bulbasaur')">
 
             <div class="bulbasaur">
                 <div class="cardimgb">
@@ -43,7 +52,7 @@
 
         </a>
 
-        <a href="#">
+        <a href="#" onclick="Game.start('Eevee')">
 
             <div class="eevee">
                 <div class="cardimge">
@@ -56,7 +65,7 @@
 
         </a>
 
-        <div href="#">
+        <a href="#" onclick="Game.start('Charmander')">
 
             <div class="charmander">
                 <div class="cardimgc">
@@ -76,3 +85,7 @@
 </body>
 
 </html>
+
+
+
+

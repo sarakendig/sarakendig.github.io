@@ -24,7 +24,15 @@ const Game = {
                 // console.log("Charmander is made")
                 break;
         }
-    }
+        let grabStart = $(".main")
+        grabStart.html(`<img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`)
+        
+        
+    },
+
+    setupArena() {
+
+    },
 }
 
 // Pokemon class
@@ -72,4 +80,4 @@ $(() => {
 //citing
 
 ///css-tricks.com for how to make a div clickable and flexbox use
-//flex-box froggy flexbox help
+// https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
