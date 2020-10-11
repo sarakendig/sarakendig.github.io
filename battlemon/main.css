@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background: rgb(6, 0, 105);
+    background: linear-gradient(90deg, rgba(6, 0, 105, 1) 0%, rgba(86, 9, 121, 1) 35%, rgba(226, 0, 255, 1) 100%);
     color: white;
 }
 
@@ -7,66 +8,125 @@ img {
     width: 150px;
 }
 
-p {
+p {}
 
-}
-
-h2 {
-
-}
+h2 {}
 
 
 .header {
-background-color: white;
-color: black;
+    background-color: white;
+    color: black;
 }
 
 .start {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    background-image: 'battlemon/imgs/BG1.jpg';
-
+    margin: 100px;
 }
 
 .start img {
-display: block;
-margin:auto;
-width: 100px;
-height: 100px;
-}
-.arena {
-
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
 }
 
-.enemy {
+.arena {}
 
-}
+.enemy {}
+
 
 .pikachu {
- width: 200px;
- height: 350px;
- background-color: yellow;
- border-radius: 20px;
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    height: 350px;
+    background-color: yellow;
+    border-radius: 15px;
+}
+
+.cardimgp {
+    display: inline-block;
+    margin: auto;
+    width: 180px;
+    height: 100px;
+    background-color: palegoldenrod;
+}
+
+.cardbodyp {
+    display: inline-block;
+    margin: auto;
+    width: 180px;
+    height: 230px;
+    color: white;
 }
 
 .bulbasaur {
+    margin: 20px;
     width: 200px;
     height: 350px;
     background-color: green;
     border-radius: 20px;
 }
 
+.cardimgb {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 330px;
+    background-color: palegoldenrod;
+}
+
+.cardbodyb {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 330px;
+}
+
 .eevee {
+    margin: 20px;
     width: 200px;
     height: 350px;
     background-color: brown;
     border-radius: 20px;
 }
 
+.cardimge {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 330px;
+    background-color: palegoldenrod;
+}
+
+.cardbodye {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 330px;
+}
+
 .charmander {
+    margin: 20px;
     width: 200px;
     height: 350px;
     background-color: orangered;
     border-radius: 20px;
+}
+
+.cardimgc {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 330px;
+    background-color: palegoldenrod;
+}
+
+.cardbodyc {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 330px;
 }
