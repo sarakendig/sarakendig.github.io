@@ -78,7 +78,7 @@ h2 {}
 
 .pikachu {
     display: inline-block;
-    margin: 70px;
+    margin: 70px 20px;
     width: 200px;
     height: 350px;
     background-color: #fbe859;
@@ -121,7 +121,7 @@ h2 {}
 
 .bulbasaur {
     display: inline-block;
-    margin: 20px;
+    margin: 70px 20px;
     width: 200px;
     height: 350px;
     background-color: #42f1c7;
@@ -162,7 +162,7 @@ h2 {}
 
 .eevee {
     display: inline-block;
-    margin: 20px;
+    margin: 70px 20px;
     width: 200px;
     height: 350px;
     background-color: #ce8e42;
@@ -203,7 +203,7 @@ h2 {}
 
 .charmander {
     display: inline-block;
-    margin: 20px;
+    margin: 70px 20px;
     width: 200px;
     height: 350px;
     background-color: #ff9040;
