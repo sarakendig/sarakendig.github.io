@@ -24,8 +24,9 @@ const Game = {
                 // console.log("Charmander is made")
                 break;
         }
-        let grabStart = $(".main")
-        grabStart.html(`<img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`)
+        let grabStart = $(".main");
+        grabStart.html(`<h3>YOU CHOOSE:</h3><h5>${playerName}</h5><img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`);
+        $(".choose").append(grabStart)
         
         
     },
