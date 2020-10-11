@@ -45,7 +45,7 @@ h2 {}
     background-color: #fbe859;
     border-radius: 15px;
     animation: flicker-in-1 2s linear both;
-    box-shadow: 3px 4px 7px 0px #000
+    box-shadow: 3px 4px 7px 0px #000;
 }
 
 .cardimgp {
@@ -54,6 +54,8 @@ h2 {}
     width: 180px;
     height: 100px;
     background: radial-gradient(circle, rgba(251, 232, 89, 1) 0%, rgba(255, 189, 41, 1) 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 .cardbodyp {
@@ -65,6 +67,8 @@ h2 {}
     height: 210px;
     background: linear-gradient(90deg, rgba(6, 0, 105, 1) 0%, rgba(250, 250, 250, 1) 0%, rgba(156, 152, 145, 1) 100%);
     opacity: 0.5;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 .bulbasaur {
@@ -75,7 +79,7 @@ h2 {}
     background-color: #42f1c7;
     border-radius: 20px;
     animation: flicker-in-1 2s linear both;
-    box-shadow: 3px 4px 7px 0px #000
+    box-shadow: 3px 4px 7px 0px #000;
 }
 
 .cardimgb {
@@ -83,7 +87,9 @@ h2 {}
     margin: 10px;
     width: 180px;
     height: 100px;
-    background: radial-gradient(circle, rgba(66, 241, 199, 1) 0%, rgba(0, 149, 149, 1) 100%)
+    background: radial-gradient(circle, rgba(66, 241, 199, 1) 0%, rgba(0, 149, 149, 1) 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 .cardbodyb {
@@ -93,6 +99,8 @@ h2 {}
     height: 210px;
     background: linear-gradient(90deg, rgba(6, 0, 105, 1) 0%, rgba(250, 250, 250, 1) 0%, rgba(156, 152, 145, 1) 100%);
     opacity: 0.5;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 .eevee {
@@ -103,7 +111,7 @@ h2 {}
     background-color: #ce8e42;
     border-radius: 20px;
     animation: flicker-in-1 2s linear both;
-    box-shadow: 3px 4px 7px 0px #000
+    box-shadow: 3px 4px 7px 0px #000;
 }
 
 .cardimge {
@@ -112,6 +120,8 @@ h2 {}
     width: 180px;
     height: 100px;
     background: radial-gradient(circle, rgba(206, 142, 66, 1) 0%, rgba(118, 72, 67, 1) 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 .cardbodye {
@@ -121,6 +131,8 @@ h2 {}
     height: 210px;
     background: linear-gradient(90deg, rgba(6, 0, 105, 1) 0%, rgba(250, 250, 250, 1) 0%, rgba(156, 152, 145, 1) 100%);
     opacity: 0.5;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 .charmander {
@@ -131,7 +143,8 @@ h2 {}
     background-color: #ff9040;
     border-radius: 20px;
     animation: flicker-in-1 2s linear both;
-    box-shadow: 3px 4px 7px 0px #000
+    box-shadow: 3px 4px 7px 0px #000;
+
 }
 
 .cardimgc {
@@ -140,6 +153,8 @@ h2 {}
     width: 180px;
     height: 100px;
     background: radial-gradient(circle, rgba(255, 144, 64, 1) 0%, rgba(245, 73, 53, 1) 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 .cardbodyc {
@@ -149,6 +164,8 @@ h2 {}
     height: 210px;
     background: linear-gradient(90deg, rgba(6, 0, 105, 1) 0%, rgba(250, 250, 250, 1) 0%, rgba(156, 152, 145, 1) 100%);
     opacity: 0.5;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 
 
