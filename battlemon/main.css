@@ -178,6 +178,13 @@ h2 {}
     box-shadow: inset 0px 0px 4px -2px rgba(0, 0, 0, 0.75);
 }
 
+.cardimgeevee img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
 .cardbodyeevee {
     display: block;
     margin: 10px;
