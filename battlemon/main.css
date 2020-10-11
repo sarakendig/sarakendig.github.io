@@ -40,12 +40,7 @@ h2 {}
     width: 1000px;
 }
 
-.cardimgpikachu img {
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-}
+
 
 .choose {
     display: flex;
@@ -84,6 +79,12 @@ h2 {}
     background: radial-gradient(circle, rgba(251, 232, 89, 1) 0%, rgba(255, 189, 41, 1) 100%);
     border-radius: 5px;
     box-shadow: inset 0px 0px 4px -2px rgba(0, 0, 0, 0.75);
+}
+.cardimgpikachu img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
 }
 
 .cardbodypikachu {
@@ -127,6 +128,13 @@ h2 {}
     background: radial-gradient(circle, rgba(66, 241, 199, 1) 0%, rgba(0, 149, 149, 1) 100%);
     border-radius: 5px;
     box-shadow: inset 0px 0px 4px -2px rgba(0, 0, 0, 0.75);
+}
+
+.cardimgbulbasaur img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
 }
 
 .cardbodybulbasaur {
