@@ -40,7 +40,7 @@ h2 {}
     width: 1000px;
 }
 
-.main img {
+.cardimgpikachu img {
     display: block;
     margin: auto;
     width: 100px;
@@ -49,25 +49,14 @@ h2 {}
 
 .choose {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    text-align: center;
-    width: 400px;
-    height: 400px;
+    align-content: center;
     color: white;
+    text-align: center;
 }
 
 .choose img {
-    
-}
-    
-
-.choose h3{
-    
-}
-
-.choose h5 {
-    
+    width: 150px;
+    height: 200px;
 }
 
 
