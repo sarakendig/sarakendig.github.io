@@ -45,6 +45,7 @@ h2 {}
     background-color: #fbe859;
     border-radius: 15px;
     animation: flicker-in-1 2s linear both;
+    box-shadow: 3px 4px 7px 0px #000
 }
 
 .cardimgp {
@@ -74,6 +75,7 @@ h2 {}
     background-color: #42f1c7;
     border-radius: 20px;
     animation: flicker-in-1 2s linear both;
+    box-shadow: 3px 4px 7px 0px #000
 }
 
 .cardimgb {
@@ -101,6 +103,7 @@ h2 {}
     background-color: #ce8e42;
     border-radius: 20px;
     animation: flicker-in-1 2s linear both;
+    box-shadow: 3px 4px 7px 0px #000
 }
 
 .cardimge {
@@ -128,6 +131,7 @@ h2 {}
     background-color: #ff9040;
     border-radius: 20px;
     animation: flicker-in-1 2s linear both;
+    box-shadow: 3px 4px 7px 0px #000
 }
 
 .cardimgc {
