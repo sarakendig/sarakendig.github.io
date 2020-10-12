@@ -40,7 +40,7 @@ const Game = {
 
         div1.style.display = "block";
         div2.style.display = "none";
-        div3.style.display = "none";
+        // div3.style.display = "none";
     }
 }
 
@@ -82,7 +82,8 @@ class Enemy extends Pokemon {
 // jQuery
 
 $(() => {
-	
+    
+
 });
 
 

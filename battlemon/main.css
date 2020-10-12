@@ -49,6 +49,13 @@ img {
 
 #arena {
     display: none;
+    position: absolute;
+    width: 1120px;
+    height: 588px;
+    left: 37px;
+    top: 40px;
+    background-image: none;
+    background-color: rgb(229, 231, 234);
 }
 
 #enemy {
@@ -76,6 +83,7 @@ img {
     border-radius: 5px;
     box-shadow: inset 0px 0px 4px -2px rgba(0, 0, 0, 0.75);
 }
+
 .cardimgpikachu img {
     display: block;
     margin: auto;
