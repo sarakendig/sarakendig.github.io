@@ -24,6 +24,8 @@ const Game = {
                 // console.log("Charmander is made")
                 break;
         }
+
+        this.changePage(
         // let grabStart = $(".main");
         // // grabStart.html(`<h3>YOU CHOOSE:</h3><br><h5>${playerName}</h5><br><img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`);
         
@@ -46,8 +48,9 @@ const Game = {
         div2 = document.getElementById(hide);
         div3 = document.getElementById(hide2);
 
-        div.style.display = "block";
-        div.style.display = "none";
+        div1.style.display = "block";
+        div2.style.display = "none";
+        div3.style.display = "none";
     }
 }
 
