@@ -58,6 +58,16 @@ img {
     background-color: rgb(229, 231, 234);
 }
 
+#textbar {
+    position: absolute;
+    width: 1120px;
+    height: 131px;
+    left: 37px;
+    top: 497px;
+    background-image: none;
+    background-color: rgb(183, 184, 185);
+}
+
 #enemy {
     display: none;
 }
