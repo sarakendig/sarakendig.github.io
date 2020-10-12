@@ -68,6 +68,13 @@ img {
     background-color: rgb(183, 184, 185);
 }
 
+#playerstats {
+    left: 797px;
+    top: 392px;
+    background-image: none;
+    background-color: rgb(26, 67, 151);
+}
+
 #enemy {
     display: none;
 }
