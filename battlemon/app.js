@@ -25,17 +25,7 @@ const Game = {
                 break;
         }
 
-        this.changePage(
-        // let grabStart = $(".main");
-        // // grabStart.html(`<h3>YOU CHOOSE:</h3><br><h5>${playerName}</h5><br><img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`);
-        
-        // let h31 = $('<h1>').text("YOU CHOOSE ")
-        // let pokemon = $('<h3>').text(` ${playerName.toUpperCase()}`)
-        // grabStart.html(`<img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`)
-        // $(grabStart).append(h31)
-        // $(grabStart).append(pokemon)
-        // $(".choose").append(grabStart)
-        
+        this.changePage('choose', 'main','arena');
         
     },
 

@@ -17,21 +17,16 @@ img {
     width: 150px;
 }
 
-p {}
-
-h2 {}
-
-
 .header {
-    display: flex;
-    flex-flow: column wrap;
+    /* display: flex;
+    flex-flow: column wrap; */
     align-content: center;
     text-align: center;
     color: white;
 }
 
-.main {
-   display: block;
+#main {
+    display: block;
     margin: auto;
     background-color: #000a1b;
     height: 500px;
@@ -40,29 +35,23 @@ h2 {}
 
 
 
-.choose {
+#choose {
     display: none;
+    margin: auto;
+    background-color: #000a1b;
+    height: 500px;
+    width: 1000px;
     color: white;
     text-align: center;
 }
 
-.choose img {
-    align-self: center;
-    width: 150px;
-    height: 150px;
-}
-
-.choose h3 {
-    align-self: flex-start;
-}
 
 
-
-.arena {
+#arena {
     display: none;
 }
 
-.enemy {
+#enemy {
     display: none;
 }
 
