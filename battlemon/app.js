@@ -24,9 +24,15 @@ const Game = {
                 // console.log("Charmander is made")
                 break;
         }
-        let grabStart = $(".main");
-        grabStart.html(`<h3>YOU CHOOSE:</h3><br><h5>${playerName}</h5><br><img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`);
-        $(".choose").append(grabStart)
+        // let grabStart = $(".main");
+        // // grabStart.html(`<h3>YOU CHOOSE:</h3><br><h5>${playerName}</h5><br><img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`);
+        
+        // let h31 = $('<h1>').text("YOU CHOOSE ")
+        // let pokemon = $('<h3>').text(` ${playerName.toUpperCase()}`)
+        // grabStart.html(`<img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`)
+        // $(grabStart).append(h31)
+        // $(grabStart).append(pokemon)
+        // $(".choose").append(grabStart)
         
         
     },
@@ -34,6 +40,15 @@ const Game = {
     setupArena() {
 
     },
+
+    changePage (show, hide, hide2) {
+        div1 = document.getElementById(show);
+        div2 = document.getElementById(hide);
+        div3 = document.getElementById(hide2);
+
+        div.style.display = "block";
+        div.style.display = "none";
+    }
 }
 
 // Pokemon class
@@ -82,3 +97,5 @@ $(() => {
 
 ///css-tricks.com for how to make a div clickable and flexbox use
 // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+// https://code.sololearn.com/W3087wxM8ov3/#js

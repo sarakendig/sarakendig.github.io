@@ -31,9 +31,7 @@ h2 {}
 }
 
 .main {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+   display: block;
     margin: auto;
     background-color: #000a1b;
     height: 500px;
@@ -43,21 +41,30 @@ h2 {}
 
 
 .choose {
-    display: flex;
-    align-content: center;
+    display: none;
     color: white;
     text-align: center;
 }
 
 .choose img {
+    align-self: center;
     width: 150px;
     height: 150px;
 }
 
+.choose h3 {
+    align-self: flex-start;
+}
 
-.arena {}
 
-.enemy {}
+
+.arena {
+    display: none;
+}
+
+.enemy {
+    display: none;
+}
 
 
 .pikachu {
