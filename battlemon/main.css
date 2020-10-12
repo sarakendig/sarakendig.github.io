@@ -48,14 +48,13 @@ img {
 
 
 #arena {
-    display: none;
     position: absolute;
-    width: 1120px;
-    height: 588px;
-    left: 37px;
-    top: 40px;
-    background-image: none;
-    background-color: rgb(229, 231, 234);
+    width: 1096px;
+    height: 556px;
+    left: 51px;
+    top: 58px;
+    background: rgb(178, 223, 255);
+    background: linear-gradient(180deg, rgba(178, 223, 255, 1) 0%, rgba(217, 254, 255, 1) 7%, rgba(135, 189, 231, 1) 18%, rgba(144, 199, 241, 1) 25%, rgba(178, 223, 255, 1) 30%, rgba(217, 254, 255, 1) 40%, rgba(113, 163, 125, 1) 53%, rgba(53, 172, 57, 1) 59%, rgba(128, 255, 130, 1) 62%, rgba(49, 209, 49, 1) 74%, rgba(7, 212, 3, 1) 85%, rgba(47, 106, 42, 1) 100%);
 }
 
 #textbar {
