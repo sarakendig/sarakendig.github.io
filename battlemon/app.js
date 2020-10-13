@@ -135,6 +135,12 @@ class Enemy extends Pokemon {
         this.enemyName = enemyName;
     }
 }
+
+const enemies = ['mew', 'combusken', 'tentacool', 'vulpix']
+
+
+
+
 // console.log(Game.reset())
 
 // jQuery
