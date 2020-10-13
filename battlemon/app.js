@@ -30,7 +30,14 @@ const Game = {
     },
 
     setupArena() {
-       
+    let grabActionsBox = $('#actionsBox')
+    let grabTextBox = $('#textbox')
+    let grabEnemyStats = $('#enemystats')
+    let grabPlayerStats = $('#playerstats')
+    let grabPlayer = $('#player')
+    let grabEnemy = $('#enemy')
+
+    
     },
 
    
