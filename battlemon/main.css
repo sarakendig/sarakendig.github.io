@@ -112,7 +112,12 @@ img {
     width: 325px;
     height: 250px;
     left: 98px;
-    top: 327px;
+    top: 370px;
+}
+
+#player img {
+height: 120px;
+width: 250px;
 }
 
 #enemy {
@@ -120,7 +125,12 @@ img {
     width: 325px;
     height: 250px;
     left: 707px;
-    top: 82px;
+    top: 160px;
+}
+
+#enemy img {
+    height: 120px;
+    width: 250px;
 }
 
 .pikachu {
