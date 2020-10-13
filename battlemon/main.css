@@ -102,6 +102,13 @@ img {
     border-radius: 10px;
   }
 
+  #player {
+    position: absolute;
+    width: 325px;
+    height: 250px;
+    left: 98px;
+    top: 327px;
+  }
 .pikachu {
     display: inline-block;
     margin: 70px 20px;
