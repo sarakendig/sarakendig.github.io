@@ -102,22 +102,24 @@
         <div>
             <h1>YOU CHOOSE </h1>
         </div>
+        <div class="pokemon"></div>
         <div class="pokemonimg"></div>
         <button onclick="changePage('main','choose','arena')">CHANGE POKEMON</button>
 
-        <button onclick="javascript:changePage('arena','main','choose')">START BATTLE</button>
+        <button id="start-game">START BATTLE</button>
     </div>
 
 
     <div id="arena">
-        <div id="actionsbox"></div>
+        <div id="actionsbox">
+            <button id="attack">ATTACK</button>
+        </div>
+        
         <div id="enemystats"></div>
         <div id="playerstats"></div>
         <div id="player">
-            <div class="grass"><img src="imgs/grass.png" alt="grass"></div>
-            <div class="playerimg">
-
-            </div>
+            <div class="playerimg"></div>
+            
         </div>
         <div id="enemy">
             <div class="grass">
