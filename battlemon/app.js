@@ -30,7 +30,7 @@ const Game = {
     },
 
     setupArena() {
-
+        this.changePage('choose', 'main','arena');
     },
 
     changePage (show, hide, hide2) {
