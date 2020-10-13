@@ -80,17 +80,16 @@ img {
     border: 5px solid rgb(112, 103, 128);
 }
 
-#playerstats {
-    left: 797px;
+#enemystats {
+    position: absolute;
+    width: 290.667px;
+    height: 84px;
+    background-color: rgb(246, 249, 217);
+    border: 5px solid rgb(62, 87, 61);
+    left: 824px;
+    border-radius: 10px;
     top: 392px;
-    background-image: none;
-    background-color: rgb(26, 67, 151);
-}
-
-#enemy {
-    display: none;
-}
-
+  }
 
 .pikachu {
     display: inline-block;
