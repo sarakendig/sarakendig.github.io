@@ -91,6 +91,17 @@ img {
     top: 392px;
   }
 
+  #playerstats {
+    position: absolute;
+    left: 69.3333px;
+    top: 82.6667px;
+    width: 290.667px;
+    height: 84px;
+    background-color: rgb(246, 249, 217);
+    border: 5px solid rgb(62, 87, 61);
+    border-radius: 10px;
+  }
+
 .pikachu {
     display: inline-block;
     margin: 70px 20px;
