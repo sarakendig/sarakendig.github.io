@@ -51,21 +51,23 @@ img {
     position: absolute;
     width: 1096px;
     height: 556px;
-    left: 51px;
-    top: 58px;
-    background: rgb(178, 223, 255);
-    background: linear-gradient(180deg, rgba(178, 223, 255, 1) 0%, rgba(217, 254, 255, 1) 7%, rgba(135, 189, 231, 1) 18%, rgba(144, 199, 241, 1) 25%, rgba(178, 223, 255, 1) 30%, rgba(217, 254, 255, 1) 40%, rgba(113, 163, 125, 1) 53%, rgba(53, 172, 57, 1) 59%, rgba(128, 255, 130, 1) 62%, rgba(49, 209, 49, 1) 74%, rgba(7, 212, 3, 1) 85%, rgba(47, 106, 42, 1) 100%);
-}
+    background: linear-gradient(rgb(178, 223, 255) 0%, rgb(217, 254, 255) 7%, rgb(135, 189, 231) 18%, rgb(144, 199, 241) 25%, rgb(178, 223, 255) 30%, rgb(217, 254, 255) 40%, rgb(113, 163, 125) 53%, rgb(53, 172, 57) 59%, rgb(128, 255, 130) 62%, rgb(49, 209, 49) 74%, rgb(7, 212, 3) 85%, rgb(47, 106, 42) 100%);
+    left: 44px;
+    top: 56px;
+  }
 
-#textbar {
+  #textbox {
     position: absolute;
-    width: 1120px;
-    height: 131px;
-    left: 37px;
-    top: 497px;
+    width: 755px;
+    height: 107px;
     background-image: none;
-    background-color: rgb(183, 184, 185);
-}
+    border-width: 5px;
+    border-style: solid;
+    left: 43px;
+    top: 498px;
+    background-color: rgb(46, 78, 103);
+    border-color: rgb(196, 170, 79);
+  }
 
 #playerstats {
     left: 797px;
