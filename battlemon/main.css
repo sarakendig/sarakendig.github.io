@@ -54,9 +54,9 @@ img {
     background: linear-gradient(rgb(178, 223, 255) 0%, rgb(217, 254, 255) 7%, rgb(135, 189, 231) 18%, rgb(144, 199, 241) 25%, rgb(178, 223, 255) 30%, rgb(217, 254, 255) 40%, rgb(113, 163, 125) 53%, rgb(53, 172, 57) 59%, rgb(128, 255, 130) 62%, rgb(49, 209, 49) 74%, rgb(7, 212, 3) 85%, rgb(47, 106, 42) 100%);
     left: 44px;
     top: 56px;
-  }
+}
 
-  #textbox {
+#textbox {
     position: absolute;
     width: 755px;
     height: 107px;
@@ -67,7 +67,18 @@ img {
     top: 498px;
     background-color: rgb(46, 78, 103);
     border-color: rgb(196, 170, 79);
-  }
+}
+
+#actionsbox {
+    position: absolute;
+    left: 808px;
+    width: 322px;
+    transform-origin: 50% 50% 0px;
+    top: 497px;
+    height: 109px;
+    background-color: rgb(247, 247, 247);
+    border: 5px solid rgb(112, 103, 128);
+}
 
 #playerstats {
     left: 797px;
