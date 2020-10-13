@@ -25,23 +25,25 @@ const Game = {
                 break;
         }
 
-        this.changePage('choose', 'main','arena');
+        changePage('choose', 'main','arena');
         
     },
 
     setupArena() {
-        this.changePage('choose', 'main','arena');
+       
     },
 
-    changePage (show, hide, hide2) {
-        div1 = document.getElementById(show);
-        div2 = document.getElementById(hide);
-        div3 = document.getElementById(hide2);
+   
+}
 
-        div1.style.display = "block";
-        div2.style.display = "none";
-        // div3.style.display = "none";
-    }
+let changePage = (show, hide, hide2) => {
+    div1 = document.getElementById(show);
+    div2 = document.getElementById(hide);
+    div3 = document.getElementById(hide2);
+
+    div1.style.display = "block";
+    div2.style.display = "none";
+    div3.style.display = "none";
 }
 
 // Pokemon class

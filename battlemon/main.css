@@ -48,12 +48,13 @@ img {
 
 
 #arena {
+    display: none;
     position: absolute;
     width: 1096px;
     height: 556px;
     background: linear-gradient(rgb(178, 223, 255) 0%, rgb(217, 254, 255) 7%, rgb(135, 189, 231) 18%, rgb(144, 199, 241) 25%, rgb(178, 223, 255) 30%, rgb(217, 254, 255) 40%, rgb(113, 163, 125) 53%, rgb(53, 172, 57) 59%, rgb(128, 255, 130) 62%, rgb(49, 209, 49) 74%, rgb(7, 212, 3) 85%, rgb(47, 106, 42) 100%);
-    left: 44px;
-    top: 56px;
+    left: 230px;
+    top: 100px;
 }
 
 #textbox {
@@ -63,18 +64,18 @@ img {
     background-image: none;
     border-width: 5px;
     border-style: solid;
-    left: 43px;
-    top: 498px;
+    left: 0px;
+    top: 439px;
     background-color: rgb(46, 78, 103);
     border-color: rgb(196, 170, 79);
 }
 
 #actionsbox {
     position: absolute;
-    left: 808px;
+    left: 765px;
     width: 322px;
     transform-origin: 50% 50% 0px;
-    top: 497px;
+    top: 437px;
     height: 109px;
     background-color: rgb(247, 247, 247);
     border: 5px solid rgb(112, 103, 128);
@@ -86,15 +87,15 @@ img {
     height: 84px;
     background-color: rgb(246, 249, 217);
     border: 5px solid rgb(62, 87, 61);
-    left: 824px;
+    left: 780px;
     border-radius: 10px;
-    top: 392px;
+    top: 330px;
 }
 
 #playerstats {
     position: absolute;
-    left: 69.3333px;
-    top: 82.6667px;
+    left: 20px;
+    top: 20px;
     width: 290.667px;
     height: 84px;
     background-color: rgb(246, 249, 217);
