@@ -24,7 +24,9 @@ const Game = {
                 // console.log("Charmander is made")
                 break;
         }
-
+        let getChoose = $(".pokemonimg");
+        getChoose.html(`<img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`);
+        $('.choose').append(getChoose)
         changePage('choose', 'main','arena');
         
     },
@@ -37,7 +39,8 @@ const Game = {
     let grabPlayer = $('#player')
     let grabEnemy = $('#enemy')
 
-    
+
+
     },
 
    
