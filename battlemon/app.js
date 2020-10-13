@@ -68,7 +68,8 @@ const Game = {
         //populate  actions box
 
 
-        //populate text box
+        //populate text box, pokemon attacked and did X damage.
+
 
         //populate  player pokemon image
         grabPlayer.html(`<img src="imgs/player/${playerName.toLowerCase()}back.png" class="img-player">`
@@ -78,6 +79,8 @@ const Game = {
         $("#player").append(".playerimg")
 
         //populate  player stats
+
+
 
 
         //populate  enemy pokemon image
