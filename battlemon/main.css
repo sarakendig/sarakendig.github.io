@@ -116,7 +116,12 @@ img {
     top: 350px;
 }
 
-#player img {
+.grass {
+    height: 120px;
+    width: 250px;
+}
+
+.playerimg {
 height: 120px;
 width: 250px;
 }
@@ -129,7 +134,7 @@ width: 250px;
     top: 160px;
 }
 
-#enemy img {
+.enemyimg {
     height: 120px;
     width: 250px;
 }
