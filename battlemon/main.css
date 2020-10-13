@@ -31,9 +31,13 @@ img {
     background-color: #000a1b;
     height: 500px;
     width: 1000px;
+    text-align: center;
 }
 
-
+.mainh1 {
+    margin: 20px;
+    text-align: center;
+}
 
 #choose {
     display: none;
