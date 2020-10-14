@@ -29,8 +29,8 @@ img {
     display: block;
     margin: auto;
     background-color: #000a1b;
-    height: 500px;
-    width: 1000px;
+    max-height: 500px;
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -43,34 +43,36 @@ img {
     display: none;
     margin: auto;
     background-color: #000a1b;
-    height: 500px;
-    width: 1000px;
+    max-height: 500px;
+    max-width: 1000px;
     color: white;
     text-align: center;
 }
 
 #choose button {
-	box-shadow:inset 0px 0px 15px 3px #23395e;
-	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-	background-color:#2e466e;
-	border-radius:17px;
-	border:1px solid #1f2f47;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	padding:6px 13px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #263666;
+    box-shadow: inset 0px 0px 15px 3px #23395e;
+    background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+    background-color: #2e466e;
+    border-radius: 17px;
+    border: 1px solid #1f2f47;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 6px 13px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
 }
+
 #choose button:hover {
-	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
-	background-color:#415989;
+    background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+    background-color: #415989;
 }
+
 #choose button:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
 
@@ -533,5 +535,20 @@ img {
 
     100% {
         opacity: 1;
+    }
+}
+
+
+//responsive
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    body {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
 }
