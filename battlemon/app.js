@@ -3,6 +3,7 @@ const Game = {
     start(playerName) {
         this.reset(playerName);
         this.setupArena(playerName);
+        this.generateEnemy(randomEnemy);
     },
 
     reset(playerName) {
@@ -84,28 +85,30 @@ const Game = {
 
 
         //populate  enemy pokemon image
-        
+        grabEnemy.html(`<img src="imgs/enemy/${enemyName.toLowerCase()}back.png" class="img-enemy">`
+        );
 
         //populate  enemy stats
     },
 
-    generateEnemy(enemyName) {
-        switch (enemyName) {
-            case "Mew":
-                enemy = new Pokemon(enemyName, 80, "psy bolt", 15);
-                // console.log("Pikachu is made")
+    generateEnemy() {
+        let enemy1 = new Enemy("Mew", 80, "psy bolt", 15);
+        let enemy2 = new Enemy("Tentacool", 60, "wrap", 10);
+        let enemy3 = new Enemy("Vulpix", 70, "flare", 20);
+        let enemy4 = new Enemy("Combusken", 70, "smash kick", 20);
+        let randomEnemy = Math.floor(Math.random()*Math.floor(4));
+        switch (randomEnemy) {
+            case 0:
+                enemy = enemy1;
                 break;
-            case "Tentacool":
-                enemy = new Pokemon(enemyName, 60, "wrap", 10);
-                // console.log("Bulbasaur is made")
+            case 1:
+                enemy = enemy2
                 break;
-            case "Vulpix":
-                enemy = new Pokemon(enemyName, 70, "flare", 20);
-                // console.log("Eevee is made")
+            case 2:
+                enemy = enemy3
                 break;
-            case "Combusken":
-                enemy = new Pokemon(enemyName, 70, "smash kick", 20);
-                // console.log("Charmander is made")
+            case 3:
+                enemy = enemy4
                 break;
         };
     }
