@@ -88,6 +88,27 @@ const Game = {
 
         //populate  enemy stats
     },
+
+    generateEnemy(enemyName) {
+        switch (enemyName) {
+            case "Mew":
+                enemy = new Pokemon(enemyName, 80, "psy bolt", 15);
+                // console.log("Pikachu is made")
+                break;
+            case "Tentacool":
+                enemy = new Pokemon(enemyName, 60, "wrap", 10);
+                // console.log("Bulbasaur is made")
+                break;
+            case "Vulpix":
+                enemy = new Pokemon(enemyName, 70, "flare", 20);
+                // console.log("Eevee is made")
+                break;
+            case "Combusken":
+                enemy = new Pokemon(enemyName, 70, "smash kick", 20);
+                // console.log("Charmander is made")
+                break;
+        };
+    }
 };
 
 let changePage = (show, hide, hide2) => {
