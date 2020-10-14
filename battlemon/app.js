@@ -26,7 +26,7 @@ const Game = {
         }
         let getChoose = $(".pokemonimg");
         getChoose.html(
-            `<img src="imgs/player/${playerName}.png" class="img-player">`
+            `<img src="imgs/player/${playerName}.png" alt="img-player">`
         );
         $(".choose").append(getChoose);
         $("#start-game").on("click", () => {
@@ -67,15 +67,22 @@ const Game = {
 
         //populate text box, pokemon attacked and did X damage.
 
+        grabTextBox.html(`<div><h3>Press the ATTACK button to start battle.</h3></div>`);
+
+        $('#textbox').append(grabTextBox)
+
         //populate  player pokemon image
         grabPlayer.html(
-            `<img src="imgs/player/${playerName}back.png" class="img-player">`
+            `<img src="imgs/player/${playerName}back.png" alt="img-player">`
         );
 
         $(".playerimg").append(grabPlayer);
         $("#player").append(".playerimg");
 
         //populate  player stats
+        grabPlayerStats.html(`<div><h3>${playerName}</h3><h3>${player.hp}</h3></div>`);
+
+        $("#playerStats").append(grabPlayerStats);
     },
 
     generateEnemy() {
@@ -104,12 +111,15 @@ const Game = {
         let grabEnemy = $(".enemyimg");
 
         //populate  enemy pokemon image
-        grabEnemy.html(`<img src="imgs/enemy/${enemy.enemyName}.png" class="img-enemy">`);
+        grabEnemy.html(`<img src="imgs/enemy/${enemy.enemyName}.png" alt="img-enemy">`);
 
         $(".enemyimg").append(grabEnemy);
         $("#enemy").append(".enemyimg");
 
         //populate  enemy stats
+        grabEnemyStats.html(`<div><h3>${enemy.enemyName}</h3><h3>${enemy.hp}</h3></div>`);
+
+        $("#playerStats").append(grabPlayerStats);
     },
 };
 
@@ -176,3 +186,5 @@ $(() => {});
 // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 // https://code.sololearn.com/W3087wxM8ov3/#js
+
+//switch case I learned on youtube awhile ago. i dont recall from who. 

@@ -95,6 +95,7 @@ img {
     left: 780px;
     border-radius: 10px;
     top: 330px;
+    color: black;
 }
 
 #playerstats {
@@ -106,6 +107,7 @@ img {
     background-color: rgb(246, 249, 217);
     border: 5px solid rgb(62, 87, 61);
     border-radius: 10px;
+    color: black;
 }
 
 #player {
@@ -116,11 +118,6 @@ img {
     top: 300px;
 }
 
-.grass img {
-    position: absolute;
-    height: 120px;
-    width: 250px;
-}
 
 .playerimg  {
     left: 98px;
@@ -137,10 +134,16 @@ img {
     width: 325px;
     height: 250px;
     left: 707px;
-    top: 160px;
+    top: 80px;
 }
 
 .enemyimg {
+    height: 120px;
+    width: 250px;
+}
+
+.grass img {
+    position: absolute;
     height: 120px;
     width: 250px;
 }
