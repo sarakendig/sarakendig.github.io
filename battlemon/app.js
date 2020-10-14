@@ -86,7 +86,7 @@ const Game = {
 
         //attack button
         $("#attack").on("click", () => {
-            fight(playerName);
+            fight();
         });
     },
 
@@ -127,23 +127,6 @@ const Game = {
         $("#playerStats").append(grabPlayerStats);
     },
 
-    fight() {
-    let playerDamage = player.damage;
-    let enemyDamage = enemy.damage;
-    let playerHp = player.hp;
-    let enemyHp = enemy.hp;
-
-    while(playerHp > 0 && enemyHp > 0) {
-        let playerTurn = true;
-        if (playerTurn) {
-            enemyHp -= playerDamage;
-            enemyHp = enemyHp - playerDamage;
-            console.log(player.move + ' does ' + player.damage);
-        } else {
-            playerHp -= enemyDamage;
-            playerHp = playerHp - enemyDamage;
-            console.log(enemy.move + ' does ' + enemy.damage);
-    }}},
 
 };
 
@@ -202,6 +185,27 @@ class Enemy {
 
 //attack
 
+let fight = () => {
+    let playerDamage = player.damage;
+    let enemyDamage = enemy.damage;
+    let playerHp = player.hp;
+    let enemyHp = enemy.hp;
+
+    while(playerHp > 0 && enemyHp > 0) {
+        let playerTurn = true;
+        if (playerTurn) {
+            enemyHp -= playerDamage;
+            enemyHp = enemyHp - playerDamage;
+            console.log(player.move + ' does ' + player.damage);
+        } else {
+            playerHp -= enemyDamage;
+            playerHp = playerHp - enemyDamage;
+            console.log(enemy.move + ' does ' + enemy.damage);
+    }
+    playerTurn ==! playerTurn
+}
+
+};
 
 
 // console.log(Game.reset())
