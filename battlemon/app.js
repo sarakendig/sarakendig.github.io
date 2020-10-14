@@ -67,7 +67,7 @@ const Game = {
 
         //populate text box, pokemon attacked and did X damage.
 
-        grabTextBox.html(`<div><h3>Press the ATTACK button to start battle.</h3></div>`);
+        grabTextBox.html(`<div><h1>Press the ATTACK button to start battle.</h1></div>`);
 
         $('#textbox').append(grabTextBox)
 
@@ -83,6 +83,11 @@ const Game = {
         grabPlayerStats.html(`<div><h3>${playerName}</h3><h3>${player.hp}</h3></div>`);
 
         $("#playerStats").append(grabPlayerStats);
+
+        //attack button
+        $("#attack").on("click", () => {
+            fight(playerName);
+        });
     },
 
     generateEnemy() {
@@ -121,6 +126,25 @@ const Game = {
 
         $("#playerStats").append(grabPlayerStats);
     },
+
+    fight() {
+    let playerDamage = player.damage;
+    let enemyDamage = enemy.damage;
+    let playerHp = player.hp;
+    let enemyHp = enemy.hp;
+
+    while(playerHp > 0 && enemyHp > 0) {
+        let playerTurn = true;
+        if (playerTurn) {
+            enemyHp -= playerDamage;
+            enemyHp = enemyHp - playerDamage;
+            console.log(player.move + ' does ' + player.damage);
+        } else {
+            playerHp -= enemyDamage;
+            playerHp = playerHp - enemyDamage;
+            console.log(enemy.move + ' does ' + enemy.damage);
+    }}},
+
 };
 
 let changePage = (show, hide, hide2) => {
@@ -159,7 +183,8 @@ class Player {
         this.move = move;
         this.damage = damage;
     }
-}
+};
+
 
 //enemy
 
@@ -172,7 +197,12 @@ class Enemy {
         this.move = move;
         this.damage = damage;
     }
-}
+};
+
+
+//attack
+
+
 
 // console.log(Game.reset())
 
@@ -188,3 +218,4 @@ $(() => {});
 // https://code.sololearn.com/W3087wxM8ov3/#js
 
 //switch case I learned on youtube awhile ago. i dont recall from who. 
+
