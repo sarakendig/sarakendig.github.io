@@ -3,57 +3,56 @@ const Game = {
     start(playerName) {
         this.reset(playerName);
         this.setupArena(playerName);
-        this.generateEnemy();
     },
 
     reset(playerName) {
         switch (playerName) {
-            case "Pikachu":
+            case "pikachu":
                 player = new Player(playerName, 70, "pika ball", 30);
                 // console.log("Pikachu is made")
                 break;
-            case "Bulbasaur":
+            case "bulbasaur":
                 player = new Player(playerName, 70, "vine whip", 50);
                 // console.log("Bulbasaur is made")
                 break;
-            case "Eevee":
+            case "eevee":
                 player = new Player(playerName, 70, "bite", 20);
                 // console.log("Eevee is made")
                 break;
-            case "Charmander":
+            case "charmander":
                 player = new Player(playerName, 70, "fire fang", 20);
                 // console.log("Charmander is made")
                 break;
         }
         let getChoose = $(".pokemonimg");
         getChoose.html(
-            `<img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`
+            `<img src="imgs/player/${playerName}.png" class="img-player">`
         );
         $(".choose").append(getChoose);
         $("#start-game").on("click", () => {
             changePage("arena", "main", "choose");
-            this.setupArena();
-            this.generateEnemy(randomEnemy);
+            this.setupArena(playerName);
+            this.generateEnemy();
         });
 
         changePage("choose", "main", "arena");
     },
 
-    setupArena(playerName) {
+    setupArena(playerName, hp, move, damage) {
         switch (playerName) {
-            case "Pikachu":
+            case "pikachu":
                 player = new Player(playerName, 70, "pika ball", 30);
                 // console.log("Pikachu is made")
                 break;
-            case "Bulbasaur":
+            case "bulbasaur":
                 player = new Player(playerName, 70, "vine whip", 50);
                 // console.log("Bulbasaur is made")
                 break;
-            case "Eevee":
+            case "eevee":
                 player = new Player(playerName, 70, "bite", 20);
                 // console.log("Eevee is made")
                 break;
-            case "Charmander":
+            case "charmander":
                 player = new Player(playerName, 70, "fire fang", 20);
                 // console.log("Charmander is made")
                 break;
@@ -70,7 +69,7 @@ const Game = {
 
         //populate  player pokemon image
         grabPlayer.html(
-            `<img src="imgs/player/${playerName.toLowerCase()}back.png" class="img-player">`
+            `<img src="imgs/player/${playerName}back.png" class="img-player">`
         );
 
         $(".playerimg").append(grabPlayer);
@@ -80,11 +79,12 @@ const Game = {
     },
 
     generateEnemy() {
-        let enemy1 = new Enemy("Mew", 80, "psy bolt", 15);
-        let enemy2 = new Enemy("Tentacool", 60, "wrap", 10);
-        let enemy3 = new Enemy("Vulpix", 70, "flare", 20);
-        let enemy4 = new Enemy("Combusken", 70, "smash kick", 20);
+        let enemy1 = new Enemy('mew', 80, "psy bolt", 15);
+        let enemy2 = new Enemy('tentacool', 60, "wrap", 10);
+        let enemy3 = new Enemy('vulpix', 70, "flare", 20);
+        let enemy4 = new Enemy('combusken', 70, "smash kick", 20);
         let randomEnemy = Math.floor(Math.random() * Math.floor(4));
+        console.log(randomEnemy)
         switch (randomEnemy) {
             case 0:
                 enemy = enemy1;
@@ -99,13 +99,15 @@ const Game = {
                 enemy = enemy4;
                 break;
         }
-        grabEnemyStats = $("#enemystats");
-        grabEnemy = $(".enemyimg");
+        
+        let grabEnemyStats = $("#enemystats");
+        let grabEnemy = $(".enemyimg");
 
         //populate  enemy pokemon image
-        grabEnemy.html(
-            `<img src="imgs/enemy/${enemyName.toLowerCase()}back.png" class="img-enemy">`
-        );
+        grabEnemy.html(`<img src="imgs/enemy/${enemy.enemyName}.png" class="img-enemy">`);
+
+        $(".enemyimg").append(grabEnemy);
+        $("#enemy").append(".enemyimg");
 
         //populate  enemy stats
     },
@@ -161,8 +163,6 @@ class Enemy {
         this.damage = damage;
     }
 }
-
-const enemies = ["mew", "combusken", "tentacool", "vulpix"];
 
 // console.log(Game.reset())
 
