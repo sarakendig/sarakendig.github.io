@@ -3,37 +3,38 @@ const Game = {
     start(playerName) {
         this.reset(playerName);
         this.setupArena(playerName);
-        this.generateEnemy(randomEnemy);
+        this.generateEnemy();
     },
 
     reset(playerName) {
         switch (playerName) {
             case "Pikachu":
-                player = new Pokemon(playerName, 70, "pika ball", 30);
+                player = new Player(playerName, 70, "pika ball", 30);
                 // console.log("Pikachu is made")
                 break;
             case "Bulbasaur":
-                player = new Pokemon(playerName, 70, "vine whip", 50);
+                player = new Player(playerName, 70, "vine whip", 50);
                 // console.log("Bulbasaur is made")
                 break;
             case "Eevee":
-                player = new Pokemon(playerName, 70, "bite", 20);
+                player = new Player(playerName, 70, "bite", 20);
                 // console.log("Eevee is made")
                 break;
             case "Charmander":
-                player = new Pokemon(playerName, 70, "fire fang", 20);
+                player = new Player(playerName, 70, "fire fang", 20);
                 // console.log("Charmander is made")
                 break;
-        };
+        }
         let getChoose = $(".pokemonimg");
         getChoose.html(
             `<img src="imgs/player/${playerName.toLowerCase()}.png" class="img-player">`
         );
         $(".choose").append(getChoose);
-        $('#start-game').on('click', () =>{
-            changePage('arena','main','choose');
+        $("#start-game").on("click", () => {
+            changePage("arena", "main", "choose");
             this.setupArena();
-        })
+            this.generateEnemy(randomEnemy);
+        });
 
         changePage("choose", "main", "arena");
     },
@@ -41,54 +42,41 @@ const Game = {
     setupArena(playerName) {
         switch (playerName) {
             case "Pikachu":
-                player = new Pokemon(playerName, 70, "pika ball", 30);
+                player = new Player(playerName, 70, "pika ball", 30);
                 // console.log("Pikachu is made")
                 break;
             case "Bulbasaur":
-                player = new Pokemon(playerName, 70, "vine whip", 50);
+                player = new Player(playerName, 70, "vine whip", 50);
                 // console.log("Bulbasaur is made")
                 break;
             case "Eevee":
-                player = new Pokemon(playerName, 70, "bite", 20);
+                player = new Player(playerName, 70, "bite", 20);
                 // console.log("Eevee is made")
                 break;
             case "Charmander":
-                player = new Pokemon(playerName, 70, "fire fang", 20);
+                player = new Player(playerName, 70, "fire fang", 20);
                 // console.log("Charmander is made")
                 break;
-        };
-        
+        }
+
         grabActionsBox = $("#actionsBox");
         grabTextBox = $("#textbox");
-        grabEnemyStats = $("#enemystats");
         grabPlayerStats = $("#playerstats");
         grabPlayer = $(".playerimg");
-        grabEnemy = $(".enemyimg");
-
 
         //populate  actions box
 
-
         //populate text box, pokemon attacked and did X damage.
 
-
         //populate  player pokemon image
-        grabPlayer.html(`<img src="imgs/player/${playerName.toLowerCase()}back.png" class="img-player">`
+        grabPlayer.html(
+            `<img src="imgs/player/${playerName.toLowerCase()}back.png" class="img-player">`
         );
 
-        $(".playerimg").append(grabPlayer)
-        $("#player").append(".playerimg")
+        $(".playerimg").append(grabPlayer);
+        $("#player").append(".playerimg");
 
         //populate  player stats
-
-
-
-
-        //populate  enemy pokemon image
-        grabEnemy.html(`<img src="imgs/enemy/${enemyName.toLowerCase()}back.png" class="img-enemy">`
-        );
-
-        //populate  enemy stats
     },
 
     generateEnemy() {
@@ -96,22 +84,31 @@ const Game = {
         let enemy2 = new Enemy("Tentacool", 60, "wrap", 10);
         let enemy3 = new Enemy("Vulpix", 70, "flare", 20);
         let enemy4 = new Enemy("Combusken", 70, "smash kick", 20);
-        let randomEnemy = Math.floor(Math.random()*Math.floor(4));
+        let randomEnemy = Math.floor(Math.random() * Math.floor(4));
         switch (randomEnemy) {
             case 0:
                 enemy = enemy1;
                 break;
             case 1:
-                enemy = enemy2
+                enemy = enemy2;
                 break;
             case 2:
-                enemy = enemy3
+                enemy = enemy3;
                 break;
             case 3:
-                enemy = enemy4
+                enemy = enemy4;
                 break;
-        };
-    }
+        }
+        grabEnemyStats = $("#enemystats");
+        grabEnemy = $(".enemyimg");
+
+        //populate  enemy pokemon image
+        grabEnemy.html(
+            `<img src="imgs/enemy/${enemyName.toLowerCase()}back.png" class="img-enemy">`
+        );
+
+        //populate  enemy stats
+    },
 };
 
 let changePage = (show, hide, hide2) => {
@@ -126,44 +123,46 @@ let changePage = (show, hide, hide2) => {
 
 // Pokemon class
 
-class Pokemon {
-    constructor(hp, move, damage) {
-        this.hp = hp;
-        this.move = move;
-        this.damage = damage;
-    }
+// class Pokemon {
+//     constructor(hp, move, damage) {
+//         this.hp = hp;
+//         this.move = move;
+//         this.damage = damage;
+//     }
 
-    attack(enemy) {
-        enemy.hp -= this.move;
-        enemy.announceHealth();
-    }
-}
+//     attack(enemy) {
+//         enemy.hp -= this.move;
+//         enemy.announceHealth();
+//     }
+// }
 
 // player
 
 let player;
 
-class Player extends Pokemon {
-    constructor(playerName) {
+class Player {
+    constructor(playerName, hp, move, damage) {
         this.playerName = playerName;
+        this.hp = hp;
+        this.move = move;
+        this.damage = damage;
     }
 }
-
 
 //enemy
 
 let enemy;
 
-class Enemy extends Pokemon {
-    constructor(enemyName) {
+class Enemy {
+    constructor(enemyName, hp, move, damage) {
         this.enemyName = enemyName;
+        this.hp = hp;
+        this.move = move;
+        this.damage = damage;
     }
 }
 
-const enemies = ['mew', 'combusken', 'tentacool', 'vulpix']
-
-
-
+const enemies = ["mew", "combusken", "tentacool", "vulpix"];
 
 // console.log(Game.reset())
 
