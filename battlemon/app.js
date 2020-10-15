@@ -32,7 +32,7 @@ const Game = {
         $("#start-game").on("click", () => {
             changePage("arena", "main", "choose");
             this.setupArena(playerName);
-            this.generateEnemy();
+            generateEnemy();
         });
 
         changePage("choose", "main", "arena");
@@ -90,42 +90,6 @@ const Game = {
         });
     },
 
-    generateEnemy() {
-        let enemy1 = new Enemy('mew', 80, "psy bolt", 15);
-        let enemy2 = new Enemy('tentacool', 60, "wrap", 10);
-        let enemy3 = new Enemy('vulpix', 70, "flare", 20);
-        let enemy4 = new Enemy('combusken', 70, "smash kick", 20);
-        let randomEnemy = Math.floor(Math.random() * Math.floor(4));
-        console.log(randomEnemy)
-        switch (randomEnemy) {
-            case 0:
-                enemy = enemy1;
-                break;
-            case 1:
-                enemy = enemy2;
-                break;
-            case 2:
-                enemy = enemy3;
-                break;
-            case 3:
-                enemy = enemy4;
-                break;
-        }
-        
-        let grabEnemyStats = $("#enemystats");
-        let grabEnemy = $(".enemyimg");
-
-        //populate  enemy pokemon image
-        grabEnemy.html(`<img src="imgs/enemy/${enemy.enemyName}.png" alt="img-enemy">`);
-
-        $(".enemyimg").append(grabEnemy);
-        $("#enemy").append(".enemyimg");
-
-        //populate  enemy stats
-        grabEnemyStats.html(`<div><h3>${enemy.enemyName}</h3><h3>${enemy.hp}</h3></div>`);
-
-        $("#playerStats").append(grabPlayerStats);
-    },
 
 
 };
@@ -168,6 +132,45 @@ class Enemy {
 };
 
 
+//generate an enemy
+
+let generateEnemy = () => {
+    let enemy1 = new Enemy('mew', 80, "psy bolt", 15);
+    let enemy2 = new Enemy('tentacool', 60, "wrap", 10);
+    let enemy3 = new Enemy('vulpix', 70, "flare", 20);
+    let enemy4 = new Enemy('combusken', 70, "smash kick", 20);
+    let randomEnemy = Math.floor(Math.random() * Math.floor(4));
+    console.log(randomEnemy)
+    switch (randomEnemy) {
+        case 0:
+            enemy = enemy1;
+            break;
+        case 1:
+            enemy = enemy2;
+            break;
+        case 2:
+            enemy = enemy3;
+            break;
+        case 3:
+            enemy = enemy4;
+            break;
+    }
+    
+    let grabEnemyStats = $("#enemystats");
+    let grabEnemy = $(".enemyimg");
+
+    //populate  enemy pokemon image
+    grabEnemy.html(`<img src="imgs/enemy/${enemy.enemyName}.png" alt="img-enemy">`);
+
+    $(".enemyimg").append(grabEnemy);
+    $("#enemy").append(".enemyimg");
+
+    //populate  enemy stats
+    grabEnemyStats.html(`<div><h3>${enemy.enemyName}</h3><h3>${enemy.hp}</h3></div>`);
+
+    $("#playerStats").append(grabPlayerStats);
+};
+
 //attack
 
 let fight = () => {
@@ -181,7 +184,7 @@ let fight = () => {
         if (playerTurn) {
             enemyHp -= playerDamage;
             enemyHp = enemyHp - playerDamage;
-            alert(player.move + ' does ' + player.damage + ' damage. ' + ' enemy hp is now ' + enemyHp);
+            alert(player.move + ' does ' + player.damage + ' damage. ' + enemy.enemyName + ' hp is now ' + enemyHp);
         } else {
             playerHp -= enemyDamage;
             playerHp = playerHp - enemyDamage;
