@@ -178,9 +178,9 @@ let fight = () => {
     let enemyDamage = enemy.damage;
     let playerHp = player.hp;
     let enemyHp = enemy.hp;
+    let playerTurn = true;
 
-    // while(playerHp > 0 && enemyHp > 0) {
-        let playerTurn = true;
+    while(playerHp > 0 && enemyHp > 0) {
         if (playerTurn) {
             enemyHp -= playerDamage;
             alert(player.move + ' does ' + player.damage + ' damage. ' + enemy.enemyName + ' hp is now ' + enemyHp);
@@ -190,8 +190,7 @@ let fight = () => {
             alert(enemy.move + ' does ' + enemy.damage + '. ' + player.playername + ' hp is now ' + playerHp);
             playerTurn = !playerTurn;
     }
-// }
-
+}
 };
 
 
@@ -207,4 +206,6 @@ $(() => {});
 // https://code.sololearn.com/W3087wxM8ov3/#js
 
 //switch case I learned on youtube awhile ago. i dont recall from who. 
+
+
 
