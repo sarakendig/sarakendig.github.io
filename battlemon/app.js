@@ -187,7 +187,7 @@ let fight = () => {
             playerTurn = !playerTurn;
         } else {
             playerHp -= enemyDamage;
-            alert(enemy.move + ' does ' + enemy.damage + '. ' + player.playername + ' hp is now ' + playerHp);
+            alert(enemy.move + ' does ' + enemy.damage + '. ' + 'your hp is now ' + playerHp);
             playerTurn = !playerTurn;
     }
 }
