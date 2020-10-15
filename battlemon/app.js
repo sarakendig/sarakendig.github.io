@@ -179,18 +179,18 @@ let fight = () => {
     let playerHp = player.hp;
     let enemyHp = enemy.hp;
 
-    while(playerHp > 0 && enemyHp > 0) {
+    // while(playerHp > 0 && enemyHp > 0) {
         let playerTurn = true;
         if (playerTurn) {
             enemyHp -= playerDamage;
             alert(player.move + ' does ' + player.damage + ' damage. ' + enemy.enemyName + ' hp is now ' + enemyHp);
-            playerTurn =! playerTurn;
+            playerTurn = !playerTurn;
         } else {
             playerHp -= enemyDamage;
             alert(enemy.move + ' does ' + enemy.damage + '. ' + player.playername + ' hp is now ' + playerHp);
-            playerTurn =! playerTurn;
+            playerTurn = !playerTurn;
     }
-}
+// }
 
 };
 
