@@ -140,21 +140,6 @@ let changePage = (show, hide, hide2) => {
     div3.style.display = "none";
 };
 
-// Pokemon class
-
-// class Pokemon {
-//     constructor(hp, move, damage) {
-//         this.hp = hp;
-//         this.move = move;
-//         this.damage = damage;
-//     }
-
-//     attack(enemy) {
-//         enemy.hp -= this.move;
-//         enemy.announceHealth();
-//     }
-// }
-
 // player
 
 let player;
@@ -196,19 +181,17 @@ let fight = () => {
         if (playerTurn) {
             enemyHp -= playerDamage;
             enemyHp = enemyHp - playerDamage;
-            console.log(player.move + ' does ' + player.damage);
+            alert(player.move + ' does ' + player.damage + ' damage. ' + ' enemy hp is now ' + enemyHp);
         } else {
             playerHp -= enemyDamage;
             playerHp = playerHp - enemyDamage;
-            console.log(enemy.move + ' does ' + enemy.damage);
+            alert(enemy.move + ' does ' + enemy.damage + '. ' + player.playername + ' hp is now ' + playerHp);
     }
-    playerTurn ==! playerTurn
+    playerTurn =! playerTurn
 }
 
 };
 
-
-// console.log(Game.reset())
 
 // jQuery
 
