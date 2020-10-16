@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Sara Kendig's Portfolio
+#### Aspiring Software Engineer, Web Designer & Student
 
-You can use the [editor on GitHub](https://github.com/sarakendig/.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[LinkedIn](https://www.linkedin.com/in/sarakendig/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Welcome to my portfolio for General Assembly's Software Engineering Immersive. 
 
-### Markdown
+I am a web designer with a background in CSS/HTML and Photoshop. I use my experience in graphic arts in combination with web site development to make better looking websites. My goal is to finish my software engineering course at GA to gain the skills necessary to further my career.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+#### Technical Skills:
 
-# Header 1
-## Header 2
-### Header 3
+*HTML| CSS | Javascript | JQuery | Adobe Photoshop | Adobe Dreamweaver | Web Design* 
 
-- Bulleted
-- List
+## Projects
 
-1. Numbered
-2. List
+### Battle'Mon
 
-**Bold** and _Italic_ and `Code` text
+Battle'mon is a turn-based pokemon battle game created using HTML, CSS, JavaScript and JQuery.
 
-[Link](url) and ![Image](src)
+[README](https://github.com/sarakendig/sarakendig.github.io/blob/main/battlemon/README.md)
+
+[PLAY](https://epic-jackson-af0413.netlify.app/#)
+
+
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sarakendig/.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
