@@ -29,5 +29,7 @@ My fight function is how I have the attacks working. I used an if statement insi
 - [ ] Have the enemy and player hp show up in the dom on the respected boxes after each attack
 - [ ] Use the textbox to display the alert
 - [ ] Use a pokemon API to allow more pokemon to be used in the game
+- [ ] Add attack shake animations
+- [ ] Improve CSS
 
 
