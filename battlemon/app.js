@@ -191,6 +191,12 @@ let fight = () => {
             playerTurn = !playerTurn;
     }
 }
+
+if (enemyHp <= 0) {
+    alert("you have won");
+} else {
+    alert("you have lost");
+}
 };
 
 
