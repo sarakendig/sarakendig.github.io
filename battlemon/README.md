@@ -18,5 +18,14 @@ The game is over when player or enemy reaches an HP of 0.
 
 In order to switch easily between characters, both player and enemy, I  used switch statements. This allows the code to execute a statement based on a specific case. In example, for the choosing the player we use the playerName parameter and pass through the pokemon name as the case. For each case we are creating a new Player which can be used in the game.
 
-To manage the change between the divs i created a 
+To manage the change between the divs i used [this](https://code.sololearn.com/W3087wxM8ov3/#js) function from sololearn then had it run via an event listener.
+
+My fight function is how I have the attacks working. I used an if statement inside a while loop to check if it was the players turn. If it is the players turn we subtracted the player damage from the enemy hp, when the players turn is done we move on to the enemies turn which runs the code with opposite information. Using another if statement I check for the HP, and alert the player if they have won or lost based on who reaches 0 HP first.
+
+
+## What I'd Like to Add 
+-Add items to heal pokemon
+-Add an HP progress bar via bootstrap
+-Have the enemy and player hp show up in the dom on the respected boxes after each attack
+-Use the textbox to display the alert
 
