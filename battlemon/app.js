@@ -136,9 +136,9 @@ class Enemy {
 
 let generateEnemy = () => {
     let enemy1 = new Enemy('mew', 80, "psy bolt", 15);
-    let enemy2 = new Enemy('tentacool', 60, "wrap", 10);
+    let enemy2 = new Enemy('tentacool', 100, "wrap", 15);
     let enemy3 = new Enemy('vulpix', 70, "flare", 20);
-    let enemy4 = new Enemy('combusken', 70, "smash kick", 20);
+    let enemy4 = new Enemy('combusken', 120, "smash kick", 20);
     let randomEnemy = Math.floor(Math.random() * Math.floor(4));
     console.log(randomEnemy)
     switch (randomEnemy) {
