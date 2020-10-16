@@ -22,6 +22,3 @@ Battle'mon is a turn-based pokemon battle game created using HTML, CSS, JavaScri
 
 [PLAY](https://epic-jackson-af0413.netlify.app/#)
 
-
-```
-
