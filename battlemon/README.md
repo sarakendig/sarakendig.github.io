@@ -16,3 +16,7 @@ The game is over when player or enemy reaches an HP of 0.
 
 ## Game Mechanics
 
+In order to switch easily between characters, both player and enemy, I  used switch statements. This allows the code to execute a statement based on a specific case. In example, for the choosing the player we use the playerName parameter and pass through the pokemon name as the case. For each case we are creating a new Player which can be used in the game.
+
+To manage the change between the divs i created a 
+
