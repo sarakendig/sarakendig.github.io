@@ -1,11 +1,11 @@
 // Game Mechanics
 const Game = {
     start(playerName) {
-        this.reset(playerName);
+        this.changePlayer(playerName);
         this.setupArena(playerName);
     },
 
-    reset(playerName) {
+    changePlayer(playerName) {
         switch (playerName) {
             case "pikachu":
                 player = new Player(playerName, 70, "pika ball", 30);
@@ -212,6 +212,8 @@ $(() => {});
 // https://code.sololearn.com/W3087wxM8ov3/#js
 
 //switch case I learned on youtube awhile ago. i dont recall from who. 
+
+//loops learned from GA
 
 
 
